@@ -81,7 +81,6 @@ section{
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	background-image: url(ASSETS/IMAGES/port/portfolio1.jpg);
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -406,9 +405,9 @@ header.sticky{
 form textarea{
 	width: 100%;
 	padding: 14px;
-	background: var(--bg-color);
+	background: var(--second-bg-color);
 	color: var(--text-color);
-	border: none;
+	border: #ccc;
 	outline: none;
 	font-size: 15px;
 	border-radius: 8px;
