@@ -71,7 +71,33 @@ span{
 	margin-left: 25px;
 	display: none;
 }
- 
+.about-big{
+	font-size: 65px;
+	color: var(--main-color);
+}
+.about-big2{
+	font-size: 45px;
+	color: var(--text-color);
+}
+
+section {
+	margin-bottom: 10px; /* adjust this value to your liking */
+	padding-bottom: 20px; /* adjust this value to your liking */
+  }
+
+  .about, .goals {
+	margin-bottom: 20px; /* adjust this value to your liking */
+  }
+
+
+
+.featurette-divider{
+	margin-left:20%;
+	margin-right:20%;
+	padding: 0px;
+
+
+}
 .about{
 	display: flex;
     grid-template-columns: repeat(2, 1fr);
@@ -79,6 +105,7 @@ span{
 	gap: 1.5rem;
 	margin-top: 70px;
 	padding: 10%  15%;
+
 
 }
 
@@ -105,6 +132,112 @@ span{
 
 
 
+
+.about{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 1.5rem;
+	margin-top: 0px;
+}
+.about-img img{
+	max-width: 530px;
+	height: auto;
+	width: 100%;
+	border-radius: 8px;
+}
+.about-text h2{
+	font-size: var(--h2-font);
+	line-height: 1;
+}
+.about-text h4{
+	font-size: 24px;
+	font-weight: 600;
+	color: var(--text-color);
+	line-height: 1.7;
+	margin: 15px 0 30px;
+}
+.about-text p{
+	color: var(--second-color);
+	font-size: var(--p-font);
+	line-height: 1.8;
+	margin-bottom: 4rem;
+}
+
+.goals{
+	background-color: var(--bg-color);
+	justify-content: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	
+}
+.main-text{
+	text-align: center;
+}
+.main-text p{
+	color: var(--second-color);
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+.main-text h2{
+	font-size: var(--h2-font);
+	line-height: 1;
+}
+.goals-content{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+	align-items: center;
+	gap: 2.5rem;
+	margin-top: 5rem;
+}
+.box{
+	background: var(--bg-color);
+	padding: 35px 35px;
+	border-radius: 8px;
+	border-style: solid;
+    border-width: thin;
+	transition: all .45s ease;
+	height: 350px;
+	width: 300px;
+}
+.s-icons i{
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+.box h3{
+	font-size: 24px;
+	font-weight: 600;
+	color: var(--text-color);
+	margin-bottom: 15px;
+}
+.box p{
+	color: var(--second-color);
+	font-size: 1rem;
+	line-height: 1.8;
+	margin-bottom: 25px;
+}
+.box-img{
+	max-width: 530px;
+	margin: 20%;
+	height: auto;
+	width: 100%;
+	border-radius: 8px;
+}	
+
+.box:hover{
+	transform: translateY(-8px);
+	cursor: pointer;
+    color: var(--main-color);
+}
+.py-5-bg-light{
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+	align-items: center;
+	gap: 2.5rem;
+	margin-top: 5rem;
+}
+.container-px-5-my-5
 
 
 
