@@ -81,21 +81,43 @@ header.sticky{
 
 
 /* -------------portfolio---------------- */
+.portfolio{
+	margin-top: 200px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.main-text{
+	text-align: center;
+}
+.main-text p{
+	color: var(--second-color);
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+.main-text h2{
+	font-size: var(--h2-font);
+	line-height: 1;
+}
 .portfolio-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
 	align-items: center;
 	gap: 2.5rem;
-	margin-top: 5rem;
+	margin-top: 100px;
+	margin-bottom: 20px;
 }
 .row{
 	position: relative;
 	overflow: hidden;
 	border-radius: 8px;
 	cursor: pointer;
+	width: 300px;
+	height: 300px;
 }
 .row img{
 	width: 100%;
+	height: 100%;
 	border-radius: 8px;
 	display: block;
 	transition: transform 0.5s;
@@ -103,7 +125,7 @@ header.sticky{
 .layer{
 	width: 100%;
 	height: 0;
-	background: linear-gradient(rgba(0,0,0,0.1), var(--second-bg-color));
+	background: linear-gradient(rgba(0,0,0,0.6), var(--bg-color));
 	position: absolute;
 	border-radius: 8px;
 	left: 0;
@@ -121,11 +143,13 @@ header.sticky{
 	font-size: 20px;
 	font-weight: 600;
 	margin-bottom: 15px;
+	color: var(--main-color);
 }
 .layer p{
 	color: var(--second-color);
 	font-size: 1rem;
 	line-height: 1.8;
+	
 }
 .layer i{
 	color: var(--main-color);
@@ -144,6 +168,7 @@ header.sticky{
 }
 .row:hover .layer{
 	height: 100%;
+	/* background-color: #0c0536; */
 }
 
 
@@ -250,5 +275,21 @@ header.sticky{
 	}
 	.navlist.open{
 		top: 100%;
+	}
+}
+
+@media (max-width: 840px){
+	.portfolio{
+		margin-top: 00px;
+		
+		
+	}
+	.portfolio-content{
+		display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+	align-items: center;
+	gap: 2.5rem;
+	margin-top: 50px;
+	margin-bottom: 20px;
 	}
 }

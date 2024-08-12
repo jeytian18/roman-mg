@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif ;
 	text-decoration: none;
 	list-style: none;
 	scroll-behavior: smooth;
@@ -21,6 +21,15 @@ body{
 	background: var(--bg-color);
 	color: var(--text-color);
 }
+.featurette-divider{
+	margin-left:10%;
+	margin-right:10%;
+	padding: 0px;
+	margin-bottom: 50px;
+	border-width: 0.2px;
+	opacity: 20%;
+}
+
 header{
 	position: fixed;
 	width: 100%;
@@ -71,7 +80,15 @@ span{
 	margin-left: 25px;
 	display: none;
 }
-
+#canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: -1;
+}
 
 /* ---------home section------- */
 section{
@@ -117,6 +134,7 @@ section{
 }
 .home-text h3{
 	color: var(--text-color);
+	font-family: Montt;
 	margin: 0 0 35px;
 	font-size: 3rem;
 	font-weight: 700;
@@ -179,6 +197,18 @@ header.sticky{
 	padding: 12px 15%;
 }
 
+.bg-img{
+	position: absolute;
+	opacity: 10%;
+	z-index: -1;
+}
+.bubble{
+	background-color: #ccc;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
 
 /* ----------about---------- */
 .about{
@@ -276,12 +306,17 @@ header.sticky{
     color: var(--main-color);
 }
 /* -------------portfolio---------------- */
+.portfolio{
+	background: linear-gradient(rgba(0,0,0,0.1), var(--second-bg-color));
+}
+
 .portfolio-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
 	align-items: center;
 	gap: 2.5rem;
 	margin-top: 5rem;
+	background: linear-gradient(rgba(0,0,0,0.1), var(--second-bg-color));
 }
 .row{
 	position: relative;
@@ -347,6 +382,7 @@ header.sticky{
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 	gap: 2.5rem;
+	margin-bottom: 0px;
 }
 .contact-text h4{
 	color: var(--text-color);
@@ -532,5 +568,17 @@ form textarea{
 	}
 	.navlist.open{
 		top: 100%;
+	}
+
+	.home{
+		position: relative;
+		height: 100vh;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		margin-top: 5%;
 	}
 }

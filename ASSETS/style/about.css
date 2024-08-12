@@ -32,15 +32,10 @@ header{
 	justify-content: space-between;
 	background: #fff;
 	padding: 22px 15%;
-	/* border-bottom: 1px solid transparent; */
+	border-bottom: 1px solid transparent;
 	transition: all .45s ease;
 }
-.logo{
-	color: var(--text-color);
-	font-size: 35px;
-	font-weight: 700;
-	letter-spacing: 1px;
-}
+
 .logo img{
     width: 20%;
 }
@@ -72,29 +67,39 @@ span{
 	display: none;
 }
 .about-big{
-	font-size: 65px;
-	color: var(--main-color);
-}
-.about-big2{
 	font-size: 45px;
 	color: var(--text-color);
 }
+.about-big2{
+	font-size: 25px;
+	color: var(--main-color);
+}
 
-section {
-	margin-bottom: 10px; /* adjust this value to your liking */
-	padding-bottom: 20px; /* adjust this value to your liking */
-  }
+#canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: -1;
+}
 
-  .about, .goals {
+
+ .goals {
 	margin-bottom: 20px; /* adjust this value to your liking */
+
   }
 
 
 
 .featurette-divider{
-	margin-left:20%;
-	margin-right:20%;
+	margin-left:10%;
+	margin-right:10%;
 	padding: 0px;
+	margin-bottom: 50px;
+	border-width: 0.2px;
+	opacity: 10%;
 
 
 }
@@ -103,35 +108,20 @@ section {
     grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 	gap: 1.5rem;
-	margin-top: 70px;
-	padding: 10%  15%;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	padding: 2%  15%;
 
 
 }
 
-.about-text h2{
-	font-size: var(--h2-font);
-	line-height: 1;
-    padding-left: 30px; 
-    margin-top: 100px;
-}
-.about-text h4{
-	font-size: 28px;
-	font-weight: 800;
-	color: var(--text-color);
-	line-height: 1.9;
-     margin: 15px 0 30px; 
-    align-items: center;
-}
+
 .about-text p{
 	color: var(--second-color);
 	font-size: var(--p-font);
 	line-height: 1.8;
 	margin-bottom: 4rem;
 }
-
-
-
 
 .about{
 	display: grid;
@@ -146,17 +136,7 @@ section {
 	width: 100%;
 	border-radius: 8px;
 }
-.about-text h2{
-	font-size: var(--h2-font);
-	line-height: 1;
-}
-.about-text h4{
-	font-size: 24px;
-	font-weight: 600;
-	color: var(--text-color);
-	line-height: 1.7;
-	margin: 15px 0 30px;
-}
+
 .about-text p{
 	color: var(--second-color);
 	font-size: var(--p-font);
@@ -189,16 +169,17 @@ section {
 	align-items: center;
 	gap: 2.5rem;
 	margin-top: 5rem;
+
 }
 .box{
-	background: var(--bg-color);
+	background: linear-gradient(rgba(0,0,0,0.1), var(--second-bg-color));
 	padding: 35px 35px;
 	border-radius: 8px;
 	border-style: solid;
     border-width: thin;
 	transition: all .45s ease;
 	height: 350px;
-	width: 300px;
+	/* width: 300px; */
 }
 .s-icons i{
 	font-size: 32px;
@@ -229,41 +210,21 @@ section {
 	cursor: pointer;
     color: var(--main-color);
 }
-.py-5-bg-light{
-
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-	align-items: center;
-	gap: 2.5rem;
-	margin-top: 5rem;
-}
-.container-px-5-my-5
-
-
-
-
-
-
-
-
-
-
 
 /* ------end section----- */
 .end{
-	padding: 20px 2%;
+	padding: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 	gap: 2rem;
 	background: var(--second-bg-color);
+
 }
-.last-text {
+.last-text p{
 	color: var(--second-color);
 	font-size: 14px;
-	align-items: center;
-	justify-content: center;
 }
 .top i{
 	padding: 10px;
@@ -309,6 +270,7 @@ section {
 @media (max-width: 920px){
 	.about{
 		grid-template-columns: 1fr;
+		
 	}
 	.about-img{
 		text-align: center;
@@ -319,6 +281,19 @@ section {
 		height: auto;
 		max-width: 100%;
 	}
+	.contact{
+		grid-template-columns: 1fr;
+	}
+}
+@media (max-width: 920px){
+	.goals{
+		grid-template-columns: 1fr;
+	}
+	.goals-content{
+		text-align: center;
+		order: 2;
+	}
+	
 	.contact{
 		grid-template-columns: 1fr;
 	}
