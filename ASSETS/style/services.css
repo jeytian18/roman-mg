@@ -88,8 +88,8 @@ span{
 .services{
 	background:transparent;
 	margin-top: 10%;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 1%;
+	margin-right: 1%;
 	margin-bottom: 100px;
 	align-content: center;
 	justify-items: center;
@@ -110,9 +110,9 @@ span{
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  /* max-width: 1200px; */
-  margin: 10px auto;
+  grid-gap: 10px;
+  max-width: 1500px;
+  margin: 20px auto;
   padding: 20px;
   background-color: var(--bg-color);
 }
@@ -122,8 +122,8 @@ span{
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  transform: scale(0.9);
+  padding: 10px;
+  transform: scale(0.5);
   /* opacity: 0; */
   transition: transform 0.3s, opacity 0.3s;
 }
@@ -139,17 +139,18 @@ span{
 
 .card-content {
   padding: 20px;
+  
 }
 
 .card-title {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   color: var(--text-color);
   margin-bottom: 10px;
 }
 
 .card-description {
-  font-size: 14px;
+  font-size: 18px;
   height: 30%;
   color: var(--text-color);
 }
@@ -166,7 +167,7 @@ span{
 
 /* Expand effect on hover */
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.0);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -184,7 +185,7 @@ span{
 	  border-radius: 30px;
 	}
 	.card-description {
-		font-size: 10px;
+		font-size: 15px;
 		height: 30%;
 		color: var(--text-color);
 	  }
@@ -196,7 +197,7 @@ span{
 	grid-gap: 20px;
 	/* max-width: 1200px; */
 	margin: 10px auto;
-	padding: 10px;
+	padding: 50px;
 	background-color: var(--bg-color);
   }
   .card-image {
@@ -208,7 +209,7 @@ span{
 	border-radius: 100px;
   }
   .card-description {
-	font-size: 10px;
+	font-size: 50px;
 	height: 30%;
 	color: var(--text-color);
   }
@@ -219,6 +220,11 @@ span{
 @media (max-width: 580px) {
   .card-grid {
     grid-template-columns: repeat(1, 1fr);
+	grid-gap: 10px;
+	/* max-width: 1200px; */
+	margin: 20px auto;
+	padding: 20px;
+	background-color: var(--bg-color);
 
   }
   .card-image {
@@ -231,13 +237,12 @@ span{
   }
 
   .card-description {
-	font-size: 10px;
+	font-size: 11px;
 	height: 30%;
 	color: var(--text-color);
   }
 
 }
-
 
   
   

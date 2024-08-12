@@ -293,7 +293,12 @@ span{
 		text-align: center;
 		order: 2;
 	}
-	
+	.about-big{
+		font-size: medium;
+	}
+	.about-big2{
+		font-size: smaller;
+	}
 	.contact{
 		grid-template-columns: 1fr;
 	}
