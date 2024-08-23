@@ -103,6 +103,7 @@ section{
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
+	
 }
 .slide{
 	margin-bottom: 20px;
@@ -463,7 +464,7 @@ header.sticky{
 }
 
 
-@media (max-width: 1480px){
+@media (max-width: 1400px){
 	header{
 		padding: 12px 2.5%;
 		transition: .1s;
@@ -473,8 +474,9 @@ header.sticky{
 		transition: .1s;;
 	}
 	section{
-		padding: 110px 3% 60px;
+		padding: 160px 3% 60px;
 	}
+
 	.end{
 		padding: 15px 3%;
 	}
